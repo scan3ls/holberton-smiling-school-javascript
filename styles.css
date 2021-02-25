@@ -1,0 +1,204 @@
+:root {
+    --purple: #C271FF;
+    --size-tablet: 768px;
+    --size-mobile: 576px;
+    --button-hover-opacity: 0.9;
+    --bg-dark-blue: #071629;
+}
+
+body {
+    font-family: 'Source Sans Pro';
+}
+
+/* BACKGROUNDS */
+  .bg-purple {
+    background-color: var(--purple);
+  }
+
+  .bg-hero {
+    background-image: url(images/pic_1.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .bg-membership, .bg-dark-blue {
+    background-color: var(--bg-dark-blue);
+  }
+
+  .bg-price {
+    background-image: url(images/pic_2.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .bg-courses {
+    background-image: url(images/pic_3.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .bg-input {
+    background-color: rgba(256,256,256,0.25);
+    border: none;
+  }
+
+/* BUTTONS */
+
+  .btn-purple {
+    padding: 0.82rem 1.25rem;
+    font-size: 0.875rem;
+    background-color: var(--purple);
+    border-radius: 1.375rem;
+    border: none;
+    filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+  }
+
+  .btn-purple:hover {
+    opacity: var(--button-hover-opacity);
+  }
+
+/* TEXT */
+
+  .text-purple {
+    color: var(--purple);
+  }
+
+  .font-coiny {
+    font-family: 'Coiny';
+  }
+
+  .font-size-small {
+    font-size: 0.75rem;
+  }
+
+  .font-size-normal {
+    font-size: 1rem;
+  }
+
+  .font-size-large {
+    font-size: 1.125rem;
+  }
+
+  .font-size-xxlarge {
+    font-size: 2rem;
+  }
+
+  .font-size-arrow {
+    font-size: 5rem;
+  }
+
+/* IMAGE */
+
+  .avatar {
+    width: 9.375rem;
+    height: 9.375rem;
+  }
+
+/* INPUT */
+
+  .custom-select {
+    color: white;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='9' viewBox='0 0 13 9' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.5 9L13 0H0L6.5 9Z' fill='white'/%3E%3C/svg%3E");
+  }
+
+  .custom-select option {
+    color: black;
+  }
+
+/* Section: Hero piece
+    ==============================================*/
+
+  .img_smile {
+    width: 2.3rem;
+    height: 1.8rem;
+  }
+
+  .hero-header {
+    margin-bottom: 10rem;
+  }
+
+  .main_part {
+    margin-bottom: 10rem;
+  }
+
+  .schooled {
+    font-size: 3.8rem;
+  }
+
+  .mb-6 {
+    margin-bottom: 5rem;
+  }
+
+  .hover-purple:hover {
+    color: var(--purple)!important;
+  }
+
+  @media screen and (min-width: 768px) {
+    .schooled {
+      font-size: 7rem;
+    }
+  }
+
+/* Section: Carousel
+    ================================================*/
+  .loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #C271FF;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+  }
+  
+  @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+  }
+
+/* Section: Popular Videos
+    ================================================*/
+
+    [class^="thumb-"] {
+      width: 100%;
+      height: 9.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-position: center;
+      background-size: cover;
+    }
+
+  [class^="thumb-"] img{
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .thumb-1 {
+    background-image: url(./images/thumbnail_1.jpg);
+  }
+
+  .thumb-2 {
+    background-image: url(./images/thumbnail_2.jpg);
+  }
+
+  .thumb-3 {
+    background-image: url(./images/thumbnail_3.jpg);
+  }
+
+  .thumb-4 {
+    background-image: url(./images/thumbnail_4.jpg);
+  }
+
+  .card-sm-img {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .img-star {
+    width: 1rem;
+    height: 1rem;
+  }

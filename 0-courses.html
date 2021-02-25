@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile School</title>
+    
+    <!-- Holberton Import -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- End -->
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="holberton_school-icon/style.css">
+</head>
+<body>
+    <!-- hero piece -->
+    <section id="main_part" class="bg-courses font-size-large pb-5">
+
+        <header class="pt-4 container">
+            <nav class="navbar navbar-expand-sm row">
+                <div class="col-4 d-sm-none">
+                    <button class="mb-6 btn bg-transparent text-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggler" aria-controls="navToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="holberton_school-icon-menu font-size-xxlarge"></span>
+                    </button>
+                </div>
+                <div class="col-4 col-md-1 d-flex flex-column flex-sm-row align-items-center">
+                    <img class="img_smile" src="./images/smile_off.png" alt="smile_white">
+                    <p class="font-coiny text-light m-3">SmileSchool</p>
+                </div>
+
+                <div class="col-4 d-sm-none"></div>
+                
+                <div class="collapse navbar-collapse" id="navToggler">
+                    <ul class="navbar-nav ml-auto font-size-small">
+                        <li class="text-center mb-2">
+                            <a class="text-white hover-purple" href="#">COURSES</a>
+                        </li>
+                        <li class="text-center mb-2 mx-2">
+                            <a class="text-white hover-purple" href="#">PRICING</a>
+                        </li>
+                        <li class="text-center mb-2">
+                            <a class="text-white hover-purple" href="#">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="pb-4 pt-3">
+            <div class="text-center">
+                <h1 class="col-12 text-light font-weight-bold font-coiny">
+                    « Don’t cry because it’s over.
+                    <br>
+                    <b class="text-purple">Smile</b> because it happened. »
+                </h1>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- filter section -->
+    <section class="bg-purple" id="search_filter">
+        <div class="container">
+            <form class="py-5 px-3 text-white row flex-column flex-md-row mx-2">
+                <div class="col-12 col-lg-4 form-group">
+                    <label class="font-weight-bold" for="keywords">KEYWORDS</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend mr-0">
+                            <span class="input-group-text holberton_school-icon-search_1 bg-input text-white font-size-large"></span>
+                        </div>
+                        <input type="text" class="form-control bg-input text-white" id="keywords" placeholder="Search by keywords">
+                    </div>
+                </div>
+                <div class="col col-md-6 col-lg-4 form-group">
+                    <label class="font-weight-bold" for="">TOPIC</label>
+                    <div class="input-group">
+                        <select class="custom-select bg-input" name="select_topic" id="select_topic">
+                            <option value="1">Novice</option>
+                            <option value="2">Intermediate</option>
+                            <option value="3">Expert</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col col-md-6 col-lg-4 form-group">
+                    <label class="font-weight-bold" for="">SORT BY</label>
+                    <div class="input-group">
+                        <select class="custom-select bg-input" name="select_sort" id="select_sort">
+                            <option value="1">Most Popular</option>
+                            <option value="2">Most Recent</option>
+                            <option value="3">Most Viewed</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- result section -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="py-5">
+                <p class="text-secondary m-0">16 videos</p>
+            </div>
+            <div class="row m-0">
+                <!-- diagonal -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pl-0 my-2">
+                    <div class="card">
+                        <div class="thumb-4">
+                            <img class="card-img-top" src="./images/play.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><b>Diagonal Smile</b></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex">
+                                <img src="./images/profile_1.jpg" alt="" class="card-sm-img rounded-circle">
+                                <p class="text-purple mx-2">Philip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div id="rating" class="d-flex">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1 " src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_off.png" alt="">
+                                </div>
+                                <div id="time">
+                                    <p class="card-text text-center text-purple">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sad -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pl-0 my-2">
+                    <div class="card">
+                        <div class="thumb-3">
+                            <img class="card-img-top" src="./images/play.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><b>Sad Smile</b></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex">
+                                <img src="./images/profile_1.jpg" alt="" class="card-sm-img rounded-circle">
+                                <p class="text-purple mx-2">Philip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div id="rating" class="d-flex">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1 " src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_off.png" alt="">
+                                </div>
+                                <div id="time">
+                                    <p class="card-text text-center text-purple">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- natural -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pl-0 my-2">
+                    <div class="card">
+                        <div class="thumb-1">
+                            <img class="card-img-top" src="./images/play.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><b>Natural Smile</b></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex">
+                                <img src="./images/profile_1.jpg" alt="" class="card-sm-img rounded-circle">
+                                <p class="text-purple mx-2">Philip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div id="rating" class="d-flex">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1 " src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_off.png" alt="">
+                                </div>
+                                <div id="time">
+                                    <p class="card-text text-center text-purple">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- happpy -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pl-0 my-2">
+                    <div class="card">
+                        <div class="thumb-2">
+                            <img class="card-img-top" src="./images/play.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><b>Happy Smile</b></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex">
+                                <img src="./images/profile_1.jpg" alt="" class="card-sm-img rounded-circle">
+                                <p class="text-purple mx-2">Philip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div id="rating" class="d-flex">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1 " src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_off.png" alt="">
+                                </div>
+                                <div id="time">
+                                    <p class="card-text text-center text-purple">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- diagonal -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pl-0 my-2">
+                    <div class="card">
+                        <div class="thumb-4">
+                            <img class="card-img-top" src="./images/play.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><b>Diagonal Smile</b></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex">
+                                <img src="./images/profile_1.jpg" alt="" class="card-sm-img rounded-circle">
+                                <p class="text-purple mx-2">Philip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div id="rating" class="d-flex">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1 " src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_off.png" alt="">
+                                </div>
+                                <div id="time">
+                                    <p class="card-text text-center text-purple">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sad -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pl-0 my-2">
+                    <div class="card">
+                        <div class="thumb-3">
+                            <img class="card-img-top" src="./images/play.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><b>Sad Smile</b></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex">
+                                <img src="./images/profile_1.jpg" alt="" class="card-sm-img rounded-circle">
+                                <p class="text-purple mx-2">Philip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div id="rating" class="d-flex">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1 " src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_off.png" alt="">
+                                </div>
+                                <div id="time">
+                                    <p class="card-text text-center text-purple">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- natural -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pl-0 my-2">
+                    <div class="card">
+                        <div class="thumb-1">
+                            <img class="card-img-top" src="./images/play.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><b>Natural Smile</b></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex">
+                                <img src="./images/profile_1.jpg" alt="" class="card-sm-img rounded-circle">
+                                <p class="text-purple mx-2">Philip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div id="rating" class="d-flex">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1 " src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_off.png" alt="">
+                                </div>
+                                <div id="time">
+                                    <p class="card-text text-center text-purple">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- happpy -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pl-0 my-2">
+                    <div class="card">
+                        <div class="thumb-2">
+                            <img class="card-img-top" src="./images/play.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><b>Happy Smile</b></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex">
+                                <img src="./images/profile_1.jpg" alt="" class="card-sm-img rounded-circle">
+                                <p class="text-purple mx-2">Philip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div id="rating" class="d-flex">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1 " src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_off.png" alt="">
+                                </div>
+                                <div id="time">
+                                    <p class="card-text text-center text-purple">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- diagonal -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pl-0 my-2">
+                    <div class="card">
+                        <div class="thumb-4">
+                            <img class="card-img-top" src="./images/play.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><b>Diagonal Smile</b></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex">
+                                <img src="./images/profile_1.jpg" alt="" class="card-sm-img rounded-circle">
+                                <p class="text-purple mx-2">Philip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div id="rating" class="d-flex">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1 " src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_off.png" alt="">
+                                </div>
+                                <div id="time">
+                                    <p class="card-text text-center text-purple">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sad -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pl-0 my-2">
+                    <div class="card">
+                        <div class="thumb-3">
+                            <img class="card-img-top" src="./images/play.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><b>Sad Smile</b></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex">
+                                <img src="./images/profile_1.jpg" alt="" class="card-sm-img rounded-circle">
+                                <p class="text-purple mx-2">Philip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div id="rating" class="d-flex">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1 " src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_off.png" alt="">
+                                </div>
+                                <div id="time">
+                                    <p class="card-text text-center text-purple">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- natural -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pl-0 my-2">
+                    <div class="card">
+                        <div class="thumb-1">
+                            <img class="card-img-top" src="./images/play.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><b>Natural Smile</b></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex">
+                                <img src="./images/profile_1.jpg" alt="" class="card-sm-img rounded-circle">
+                                <p class="text-purple mx-2">Philip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div id="rating" class="d-flex">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1 " src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_off.png" alt="">
+                                </div>
+                                <div id="time">
+                                    <p class="card-text text-center text-purple">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- happpy -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pl-0 my-2">
+                    <div class="card">
+                        <div class="thumb-2">
+                            <img class="card-img-top" src="./images/play.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><b>Happy Smile</b></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex">
+                                <img src="./images/profile_1.jpg" alt="" class="card-sm-img rounded-circle">
+                                <p class="text-purple mx-2">Philip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div id="rating" class="d-flex">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1 " src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_off.png" alt="">
+                                </div>
+                                <div id="time">
+                                    <p class="card-text text-center text-purple">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- diagonal -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pl-0 my-2">
+                    <div class="card">
+                        <div class="thumb-4">
+                            <img class="card-img-top" src="./images/play.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><b>Diagonal Smile</b></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex">
+                                <img src="./images/profile_1.jpg" alt="" class="card-sm-img rounded-circle">
+                                <p class="text-purple mx-2">Philip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div id="rating" class="d-flex">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1 " src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_off.png" alt="">
+                                </div>
+                                <div id="time">
+                                    <p class="card-text text-center text-purple">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sad -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pl-0 my-2">
+                    <div class="card">
+                        <div class="thumb-3">
+                            <img class="card-img-top" src="./images/play.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><b>Sad Smile</b></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex">
+                                <img src="./images/profile_1.jpg" alt="" class="card-sm-img rounded-circle">
+                                <p class="text-purple mx-2">Philip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div id="rating" class="d-flex">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1 " src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_off.png" alt="">
+                                </div>
+                                <div id="time">
+                                    <p class="card-text text-center text-purple">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- natural -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pl-0 my-2">
+                    <div class="card">
+                        <div class="thumb-1">
+                            <img class="card-img-top" src="./images/play.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><b>Natural Smile</b></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex">
+                                <img src="./images/profile_1.jpg" alt="" class="card-sm-img rounded-circle">
+                                <p class="text-purple mx-2">Philip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div id="rating" class="d-flex">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1 " src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_off.png" alt="">
+                                </div>
+                                <div id="time">
+                                    <p class="card-text text-center text-purple">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- happpy -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pl-0 my-2">
+                    <div class="card">
+                        <div class="thumb-2">
+                            <img class="card-img-top" src="./images/play.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><b>Happy Smile</b></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex">
+                                <img src="./images/profile_1.jpg" alt="" class="card-sm-img rounded-circle">
+                                <p class="text-purple mx-2">Philip Massey</p>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div id="rating" class="d-flex">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1 " src="./images/star_on.png" alt="">
+                                    <img class="img-star mr-1" src="./images/star_off.png" alt="">
+                                </div>
+                                <div id="time">
+                                    <p class="card-text text-center text-purple">8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-dark-blue">
+        <div class="w-75 mx-auto pt-5 pb-3">
+            <div class=" d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                <div id="footer_logo" class="d-flex align-items-center">
+                    <img class="img_smile" src="./images/smile_off.png" alt="smile_white">
+                    <p class="font-coiny text-light m-3">SmileSchool</p>
+                </div>
+                <div id="footer_social" class="my-3">
+                    <a href="facebook.com">
+                        <span class="holberton_school-icon-ic_facebook text-white font-size-xxlarge"></span>
+                    </a>
+                    <a href="twitter.com">
+                        <span class="holberton_school-icon-ic_twitter text-white font-size-xxlarge"></span>
+                    </a>
+                    <a href="instagram.com">
+                        <span class="holberton_school-icon-ic_instagram text-white font-size-xxlarge"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="text-white-50 text-center" id="copywrite">&copy;smileschool2020</div>
+        </div>
+    </footer>
+</body>
+</html>
