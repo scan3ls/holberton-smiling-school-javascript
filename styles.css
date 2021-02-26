@@ -202,3 +202,12 @@ body {
     width: 1rem;
     height: 1rem;
   }
+
+/* Carousel
+    ===========================*/
+
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+      display: flex;
+  }
