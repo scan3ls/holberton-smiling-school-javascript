@@ -4,16 +4,16 @@ function buildVideoCard(title, subTitle, name, pic, duration, star, thumbnail) {
     var cardImgTop = $(`<img src="./images/play.png" class="card-img-top" alt="">`);
     
     var cardBody = $('<div class="m-3 mr-auto">');
-    var cardTitle = $(`<p>${title}</p>`);
-    var cardSubTitle = $(`<p class="col-12">${subTitle}</p>`);
+    var cardTitle = $(`<p><b>${title}</b></p>`);
+    var cardSubTitle = $(`<p class="col-12 ml-0 pl-0">${subTitle}</p>`);
 
     var authorDiv = $('<div class="d-flex">');
     var authorName = $(`<p class="text-purple mx-2">${name}</p>`);
-    var authorPic = $(`<img src="${pic}" alt="" class="card-sm-img rounded-circle>`);
+    var authorPic = $(`<img src="${pic}" alt="" class="card-sm-img rounded-circle">`);
     
     authorDiv.append(authorPic, authorName);
 
-    var ratingDiv = $('<div class="d-flex justify-content-between mt-3">');
+    var ratingDiv = $('<div class="d-flex justify-content-between align-items-center mt-3">');
     var rating = $('<div id="rating" class="d-flex">');
     var time = $('<div id="time" class="pr-1">');
 
